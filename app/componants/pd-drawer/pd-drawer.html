@@ -1,0 +1,26 @@
+
+<link rel="import" href="../../../bower_components/polymer/polymer.html">
+<dom-module id = "pd-drawer">
+    <template>
+        <div>Left : {{leftDrawer}}</div>
+        <div>Right : {{rightDrawer}}</div>
+    </template>
+</dom-module>
+
+<script>
+
+    Polymer({
+        is : "pd-drawer",
+        properties : {
+            leftDrawer : {
+                type : Boolean,
+                value : true
+            },
+            rightDrawer: {
+                type : Boolean,
+                value : true
+            }
+        }
+    });
+
+</script>
